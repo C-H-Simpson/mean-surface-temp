@@ -95,7 +95,7 @@ def get_model_resolution(Model: str, Var: str = "tas") -> dict:
 
 if __name__ == "__main__":
     print("testing")
-    reduced_list_path = Path("../CMIP6/UMR_list-CMIP6_day.txt")
+    reduced_list_path = Path("UMR_list-CMIP6_day.txt")
     used_models = pd.read_csv(
         reduced_list_path,
         delimiter="\t",
