@@ -4,6 +4,7 @@ for a given year range, for a given model.
 * It uses [baspy](https://github.com/scotthosking/baspy).
 * You need access to JASMIN, and the CEDA archive in order for it to find the data.
 * Requires a recent (v0.15.1) version of xarray for weighted averages to work.
+* Note that if data are missing, it will return `nan` rather than raising an exception. You might want to change this behaviour for your own application. There are a several models with data files missing in the CEDA archive.
 
 Usage example:
 ```
